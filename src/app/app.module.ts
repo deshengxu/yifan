@@ -9,6 +9,8 @@ import { PortfolioComponent }   from './portfolio.component';
 import { RouterModule }   from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
+import { PersonService }    from './services/person.service';
+
 @NgModule({
   imports:      [ 
     BrowserModule,
@@ -20,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     InterestsComponent,
     PortfolioComponent 
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [PersonService]
 })
 export class AppModule { }
